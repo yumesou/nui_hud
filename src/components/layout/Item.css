@@ -1,0 +1,39 @@
+.contador {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+    position: relative;
+
+    margin: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+}
+
+.circle {
+    width: 43px;
+    height: 43px;
+}
+
+circle {
+    fill: none;
+    stroke-width: 3px;
+    stroke-dasharray: 135;
+    stroke-dashoffset: 135;
+    animation: anim 2s ease-out forwards;
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
